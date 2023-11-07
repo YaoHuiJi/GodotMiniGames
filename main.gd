@@ -11,8 +11,8 @@ func _process(delta):
 	pass
 	
 func quit_to_main():
-	print("Quit to main screen")
-
+	print("退回主界面")
+	$MainMenu.show()
 
 func _on_main_menu_open_game(gameId,gameName):
 	$MainMenu.hide()

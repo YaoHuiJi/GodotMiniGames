@@ -11,6 +11,6 @@ func _process(delta):
 
 
 func _on_quit_pressed():
-	get_parent().get_node("MainMenu").show()
+	get_parent().quit_to_main()
 	call_deferred("free")
 	pass # Replace with function body.
