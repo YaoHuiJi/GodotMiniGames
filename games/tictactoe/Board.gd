@@ -1,6 +1,6 @@
 extends Node2D
 
-signal changePlayer()
+signal turn_over(x, y, state)
 
 var boardSize = 412
 
@@ -47,8 +47,14 @@ func drawGridLine():
 	var c2_e = Vector2(x + boardSize/3.0*2, y + boardSize)
 	draw_line(c2_s, c2_e, Color.GRAY, 4)
 
-func passSignal():
-	changePlayer.emit()
+func passSignal(x, y, state):
+	turn_over.emit(x, y, state)
+	pass
+
+func reset():
+	for child in get_children():
+		child.reset()
+	pass
 
 func _ready():
 	print("board ready")

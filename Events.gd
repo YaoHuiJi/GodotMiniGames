@@ -22,6 +22,7 @@ func clear():
 	
 func emit(eventName):
 	#print("触发事件：", eventName)
-	var handlers:Array = events[eventName]
-	for handler in handlers:
-		handler.call()
+	if events.has(eventName):
+		var handlers:Array = events[eventName]
+		for handler in handlers:
+			handler.call()

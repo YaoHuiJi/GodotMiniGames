@@ -6,7 +6,7 @@ var gridY = 0
 
 var game
 
-signal turn_over
+signal turn_over(x, y, state)
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -19,7 +19,11 @@ func setGrid():
 	state = game.currentPlayer
 	pass
 
+func reset():
+	state = 0
+	region_rect = Rect2(0, 0, 16, 16)
+
 func _on_button_pressed():
 	if(state == 0):
 		setGrid()
-		turn_over.emit()
+		turn_over.emit(gridX, gridY, game.currentPlayer)
