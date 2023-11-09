@@ -1,0 +1,53 @@
+[gd_scene load_steps=2 format=3 uid="uid://rjc4stq4f7qo"]
+
+[ext_resource type="Script" path="res://games/TitleHud.gd" id="1_5d8iu"]
+
+[node name="TitleHud" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_5d8iu")
+
+[node name="TitleLabel" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -101.5
+offset_top = 38.0
+offset_right = 103.5
+offset_bottom = 105.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 32
+text = "Untitled Game"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Quit" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -38.0
+offset_top = 9.0
+offset_right = -8.0
+offset_bottom = 40.0
+grow_horizontal = 0
+text = "X"
+
+[node name="Status" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -20.0
+offset_top = 88.0
+offset_right = 22.0
+offset_bottom = 114.0
+grow_horizontal = 2
+text = "None"
+
+[connection signal="pressed" from="Quit" to="." method="_on_quit_pressed"]

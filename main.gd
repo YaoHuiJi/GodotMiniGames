@@ -10,10 +10,6 @@ func _notification(what):
 	if (what == NOTIFICATION_PREDELETE):
 		Events.clear()
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	pass
-	
 func quit_to_main():
 	print("退回主界面")
 	$MainMenu.show()

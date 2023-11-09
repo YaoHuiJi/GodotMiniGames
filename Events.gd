@@ -17,7 +17,7 @@ func remove(eventName):
 	events.erase(eventName)
 
 func clear():
-	#print("清空事件处理器")
+	print("清空事件处理器")
 	events.clear()
 	
 func emit(eventName):
