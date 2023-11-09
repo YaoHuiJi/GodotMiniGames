@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://twgg124klqad"
-path="res://.godot/imported/pieces.png-26b6be34f56b034a53eace13ee2d4eec.ctex"
+path="res://.godot/imported/pieces.png-cb8edc5a24a3895aa8084a30ca44104d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://games/tictactoe/pieces.png"
-dest_files=["res://.godot/imported/pieces.png-26b6be34f56b034a53eace13ee2d4eec.ctex"]
+source_file="res://games/0.tictactoe/pieces.png"
+dest_files=["res://.godot/imported/pieces.png-cb8edc5a24a3895aa8084a30ca44104d.ctex"]
 
 [params]
 

@@ -60,7 +60,7 @@ func _ready():
 	print("board ready")
 	for row in range(3):
 		for col in range(3):
-			var piece = preload("res://games/tictactoe/Piece.tscn").instantiate()
+			var piece = preload("res://games/0.tictactoe/Piece.tscn").instantiate()
 			var textureSize = piece.texture.get_height()
 			piece.position = getGridPosition(row, col)
 			piece.scale.x = boardSize/3.0/textureSize

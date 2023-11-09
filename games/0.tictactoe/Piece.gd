@@ -10,7 +10,7 @@ signal turn_over(x, y, state)
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	texture = preload("res://games/tictactoe/pieces.png")
+	texture = preload("res://games/0.tictactoe/pieces.png")
 	region_enabled = true
 	region_rect = Rect2(state * 16, 0, 16, 16)
 

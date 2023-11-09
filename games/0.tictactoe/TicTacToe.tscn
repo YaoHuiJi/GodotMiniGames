@@ -1,0 +1,27 @@
+[gd_scene load_steps=6 format=3 uid="uid://pbght31elun5"]
+
+[ext_resource type="Script" path="res://games/0.tictactoe/TicTacToe.gd" id="1_y07yg"]
+[ext_resource type="PackedScene" uid="uid://rjc4stq4f7qo" path="res://games/TitleHud.tscn" id="2_1mp0k"]
+[ext_resource type="PackedScene" uid="uid://bemqtc1iyai6k" path="res://games/0.tictactoe/Board.tscn" id="3_kve1f"]
+[ext_resource type="PackedScene" uid="uid://cbcetbktmug6r" path="res://games/0.tictactoe/GameOver.tscn" id="4_ofkw1"]
+[ext_resource type="Texture2D" uid="uid://twgg124klqad" path="res://games/0.tictactoe/pieces.png" id="5_vjak0"]
+
+[node name="TicTacToe" type="Node"]
+script = ExtResource("1_y07yg")
+
+[node name="TitleHud" parent="." instance=ExtResource("2_1mp0k")]
+title = "Tic Tac Toe"
+
+[node name="Board" parent="." instance=ExtResource("3_kve1f")]
+
+[node name="GameOver" parent="." instance=ExtResource("4_ofkw1")]
+visible = false
+
+[node name="PointLight2D" type="PointLight2D" parent="."]
+position = Vector2(495, 289)
+scale = Vector2(3.16667, 7.8125)
+shadow_enabled = true
+texture = ExtResource("5_vjak0")
+
+[connection signal="turn_over" from="Board" to="." method="_on_board_turn_over"]
+[connection signal="reset_game" from="GameOver" to="." method="_on_game_over_reset_game"]

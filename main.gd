@@ -20,7 +20,7 @@ func _on_main_menu_open_game(gameId,gameName):
 	match gameId:
 		0:
 			print("打开游戏: ", gameName)
-			var tictactoe = preload("res://games/tictactoe/TicTacToe.tscn").instantiate()
+			var tictactoe = preload("res://games/0.tictactoe/TicTacToe.tscn").instantiate()
 			add_child(tictactoe)
 		_:
 			print("游戏还没实现：",gameId)

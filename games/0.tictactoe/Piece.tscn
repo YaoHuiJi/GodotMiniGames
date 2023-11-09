@@ -1,14 +1,14 @@
 [gd_scene load_steps=3 format=3 uid="uid://bosb5bqwcgybs"]
 
-[ext_resource type="Texture2D" uid="uid://twgg124klqad" path="res://games/tictactoe/pieces.png" id="1_8xfi2"]
-[ext_resource type="Script" path="res://games/tictactoe/Piece.gd" id="1_f0qfw"]
+[ext_resource type="Texture2D" uid="uid://twgg124klqad" path="res://games/0.tictactoe/pieces.png" id="1_wlv4g"]
+[ext_resource type="Script" path="res://games/0.tictactoe/Piece.gd" id="2_ppjxw"]
 
 [node name="Piece" type="Sprite2D"]
-texture = ExtResource("1_8xfi2")
+texture = ExtResource("1_wlv4g")
 offset = Vector2(8, 8)
 region_enabled = true
 region_rect = Rect2(0, 0, 16, 16)
-script = ExtResource("1_f0qfw")
+script = ExtResource("2_ppjxw")
 
 [node name="Button" type="Button" parent="."]
 self_modulate = Color(1, 1, 1, 0)

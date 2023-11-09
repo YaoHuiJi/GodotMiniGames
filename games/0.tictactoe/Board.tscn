@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://bemqtc1iyai6k"]
+
+[ext_resource type="Script" path="res://games/0.tictactoe/Board.gd" id="1_utb47"]
+
+[node name="Board" type="Node2D"]
+script = ExtResource("1_utb47")
